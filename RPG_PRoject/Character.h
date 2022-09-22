@@ -1,4 +1,7 @@
 #pragma once
+
+#include <iostream>
+
 class Character
 {
 private:
@@ -9,5 +12,6 @@ public:
 	~Character(); 
 
 	void setupStats(int _hp, int _str, int _def, int _agi);
+	void displayStats();
 };
 

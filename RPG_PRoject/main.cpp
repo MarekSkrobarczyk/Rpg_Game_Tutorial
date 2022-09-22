@@ -2,6 +2,8 @@
 #include <iostream> 
 #include <string> 
 #include "Questions.h"
+#include "Character.h"
+
 
 
 
