@@ -106,5 +106,10 @@ int main() {
 
 	std::cout << " Your life decreased by " << dmg << " hit points, now your health is " << hp;
 
+	Character testCharacter;
+
+	testCharacter.setupStats(200, 200, 200, 300);
+	testCharacter.displayStats(); 
+
 	system("pause");
 }
