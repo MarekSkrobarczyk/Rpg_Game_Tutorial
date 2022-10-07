@@ -1,4 +1,5 @@
 #include "Character.h"
+#include <iostream>
 
 void Character::setupStats(int _hp, int _str, int _def, int _agi)
 {
@@ -18,4 +19,38 @@ void Character::displayStats()
 		<< " AGI: " << agi << std::endl;
 	
 
+}
+
+int Character::getHP()
+{
+	return hp;
+}
+int Character::getHPmax()
+{
+	return hpMax;
+}
+int Character::getAGI()
+{
+	return agi;
+}
+
+int Character::getDamaged()
+{
+	return str;
+}
+void Character::takeDamage(int dmg)
+{
+	int dmgAftCalc = dmg - def;
+
+	if (dmgAftCalc < 1)
+	{
+		dmgAftCalc = 1;
+	}
+
+	hp -= dmgAftCalc; 
+}
+
+std::string getName()
+{
+	return "Character";
 }
