@@ -4,9 +4,10 @@
 
 class Character
 {
-public:
+private:
 	int hp, hpMax, str, def, agi;
  
+public:
 
 	void setupStats(int _hp, int _str, int _def, int _agi);
 	void displayStats();
