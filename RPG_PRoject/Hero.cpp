@@ -14,7 +14,15 @@ std::string Hero::getName()
 
 void Hero::heal(int amount)
 {
-	hp ++ amount;
+	hp += amount;
 }
-void Hero::atkBoost(int amount);
-void Hero::defBoost(int amount);
+
+void Hero::atkBoost(int amount)
+{
+	str += amount;
+}
+
+void Hero::defBoost(int amount)
+{
+	def += amount;
+}

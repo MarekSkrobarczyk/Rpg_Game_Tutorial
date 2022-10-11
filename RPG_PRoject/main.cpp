@@ -47,7 +47,7 @@ int main() {
 	int hp = 0, str = 0, def = 0, agi = 0;
 
 	bool characterSetup = false;
-	s
+	
 	while (characterSetup == false)
 	{
 		std::cout << "What type of character are you?" << std::endl;

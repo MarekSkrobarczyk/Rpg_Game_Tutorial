@@ -14,7 +14,7 @@ private:
 public:
 
 	void setName(std::string s);
-	std::string getName();   // it will replace inherited from Character
+	std::string getName();  
 
 	void heal(int amount);
 	void atkBoost(int amount);
