@@ -4,7 +4,7 @@
 
 class Character
 {
-private:
+protected:
 	int hp, hpMax, str, def, agi;
  
 public:

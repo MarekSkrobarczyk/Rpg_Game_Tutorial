@@ -8,13 +8,16 @@
 
 class Hero: public Character
 {
+	
+private:
+	std::string name;
 public:
 
-	void setName(std::string name);
+	void setName(std::string s);
 	std::string getName();   // it will replace inherited from Character
 
-	void heal(int incHP);
-	void atkBoost(int incAtk);
-	void defBoost(int incDef);
+	void heal(int amount);
+	void atkBoost(int amount);
+	void defBoost(int amount);
 };
 
