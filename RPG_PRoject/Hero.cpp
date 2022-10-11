@@ -15,6 +15,11 @@ std::string Hero::getName()
 void Hero::heal(int amount)
 {
 	hp += amount;
+	
+	if (hp > hpMax)
+	{
+		hp = hpMax;
+	}
 }
 
 void Hero::atkBoost(int amount)
