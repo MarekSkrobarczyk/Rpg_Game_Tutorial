@@ -3,6 +3,9 @@
 #include <string> 
 #include "Questions.h"
 #include "Character.h"
+#include "Hero.h"
+#include "Glob.h"
+#include "Mimic.h"
 
 
 
