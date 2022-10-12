@@ -4,7 +4,7 @@ class Glob :
     public Character
 {
 public:
-
+    Glob();
     std::string getName();
-};
 
+};

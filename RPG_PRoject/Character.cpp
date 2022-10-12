@@ -1,5 +1,6 @@
 #include "Character.h"
 #include <iostream>
+#include <string>
 
 void Character::setupStats(int _hp, int _str, int _def, int _agi)
 {
@@ -50,7 +51,7 @@ void Character::takeDamage(int dmg)
 	hp -= dmgAftCalc; 
 }
 
-std::string getName()
+/*std::string getName()
 {
 	return "Character";
-}
+}*/

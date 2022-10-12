@@ -114,5 +114,18 @@ int main() {
 	testCharacter.setupStats(200, 200, 200, 300);
 	testCharacter.displayStats(); 
 
+	Hero hero;
+	hero.setName(name);
+	hero.setupStats(hp, str, def, agi);
+
+	Glob glob1; // calls constructor and fills base stats
+
+	hero.takeDamage(glob1.getDamaged());
+	glob1.takeDamage(hero.getDamaged());
+
+	hero.displayStats();
+	glob1.displayStats();
+
+
 	system("pause");
 }

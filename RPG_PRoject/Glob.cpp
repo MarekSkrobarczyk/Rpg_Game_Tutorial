@@ -1,4 +1,5 @@
 #include "Glob.h"
+#include <iostream>
 
 Glob::Glob()
 {

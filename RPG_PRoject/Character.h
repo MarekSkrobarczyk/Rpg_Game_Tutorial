@@ -19,6 +19,6 @@ public:
 	int getDamaged();
 	void takeDamage(int damgage);
 
-	std::string getName();
+//	std::string getName();
 };
 

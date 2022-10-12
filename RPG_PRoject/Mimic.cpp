@@ -1,4 +1,5 @@
 #include "Mimic.h"
+#include<iostream>
 
 
 Mimic::Mimic()
@@ -10,6 +11,9 @@ Mimic::Mimic()
 	agi = 2;
 
 }
+
+
+
 std::string Mimic::getName()
 {
 	return "Mimic";
