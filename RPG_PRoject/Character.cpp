@@ -14,7 +14,7 @@ void Character::setupStats(int _hp, int _str, int _def, int _agi)
 
 void Character::displayStats()
 {
-	std::cout << " HP: " << hpMax << std::endl
+	std::cout << " HP: " << hp << std::endl
 		<< " STR: " << str << std::endl
 		<< " DEF: " << def << std::endl
 		<< " AGI: " << agi << std::endl;
@@ -48,10 +48,10 @@ void Character::takeDamage(int dmg)
 		dmgAftCalc = 1;
 	}
 
-	hp -= dmgAftCalc; 
+	hp = hp - dmgAftCalc; 
 }
 
-/*std::string getName()
+std::string getName()
 {
 	return "Character";
-}*/
+}

@@ -1,5 +1,6 @@
 #include "Glob.h"
 #include <iostream>
+#include<string>
 
 Glob::Glob()
 {
@@ -11,7 +12,7 @@ Glob::Glob()
 
 }
 
-std::string getName()
+std::string Glob::getName()
 {
 	return "Glob";
 }

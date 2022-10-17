@@ -109,10 +109,10 @@ int main() {
 
 	std::cout << " Your life decreased by " << dmg << " hit points, now your health is " << hp;
 
-	Character testCharacter;
+	//Character testCharacter;
 
-	testCharacter.setupStats(200, 200, 200, 300);
-	testCharacter.displayStats(); 
+	//testCharacter.setupStats(200, 200, 200, 300);
+	//testCharacter.displayStats(); 
 
 	Hero hero;
 	hero.setName(name);
@@ -120,12 +120,26 @@ int main() {
 
 	Glob glob1; // calls constructor and fills base stats
 
+	std::cout << "Glob parameters before take a dmg \n";
+	glob1.displayStats();
+	
+	std::cout << "\n\n Glob parameters after take a dmg \n";
 	hero.takeDamage(glob1.getDamaged());
 	glob1.takeDamage(hero.getDamaged());
 
-	hero.displayStats();
+    //hero.displayStats();
 	glob1.displayStats();
+	std::cout << "\n\n Hero stats\n";
+	hero.displayStats();
+	/*std::cout << "\n\n";
+	Glob* GlobPtr = new Glob();
+	GlobPtr->displayStats();
 
+	GlobPtr->takeDamage(5);
+	std::cout << "\n\n";
+
+	GlobPtr->displayStats();
+	std::cout << GlobPtr->getName();*/
 
 	system("pause");
 }

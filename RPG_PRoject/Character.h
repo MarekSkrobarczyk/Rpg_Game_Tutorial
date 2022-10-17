@@ -17,8 +17,8 @@ public:
 	int getAGI();
 
 	int getDamaged();
-	void takeDamage(int damgage);
+	void takeDamage(int dmg);
 
-//	std::string getName();
+	std::string getName();
 };
 
