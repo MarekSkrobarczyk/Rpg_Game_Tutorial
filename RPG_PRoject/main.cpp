@@ -118,20 +118,20 @@ int main() {
 	hero.setName(name);
 	hero.setupStats(hp, str, def, agi);
 
-	Glob glob1; // calls constructor and fills base stats
+	//Glob glob1; // calls constructor and fills base stats
 
-	std::cout << "Glob parameters before take a dmg \n";
-	glob1.displayStats();
+	//std::cout << "Glob parameters before take a dmg \n";
+	//glob1.displayStats();
 	
-	std::cout << "\n\n Glob parameters after take a dmg \n";
-	hero.takeDamage(glob1.getDamaged());
-	glob1.takeDamage(hero.getDamaged());
+	//std::cout << "\n\n Glob parameters after take a dmg \n";
+	//hero.takeDamage(glob1.getDamaged());
+	//glob1.takeDamage(hero.getDamaged());
 
     //hero.displayStats();
-	glob1.displayStats();
-	std::cout << "\n\n Hero stats\n";
-	hero.displayStats();
-	/*std::cout << "\n\n";
+	//glob1.displayStats();
+	//std::cout << "\n\n Hero stats\n";
+	//hero.displayStats();
+	std::cout << "\n\n";
 	Glob* GlobPtr = new Glob();
 	GlobPtr->displayStats();
 
@@ -139,7 +139,10 @@ int main() {
 	std::cout << "\n\n";
 
 	GlobPtr->displayStats();
-	std::cout << GlobPtr->getName();*/
+	std::cout << GlobPtr->getName();
+
+	delete GlobPtr;
+	GlobPtr = nullptr;
 
 	system("pause");
 }
